@@ -1,0 +1,10 @@
+playwright
+pytest
+pytest-xdist
+pandas
+requests
+python-dotenv
+openpyxl
+pytest-playwright
+pytest-html
+logger
