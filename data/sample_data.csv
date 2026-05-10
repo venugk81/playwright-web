@@ -1,0 +1,10 @@
+Testname,Execute,EmailID,Password,confirmPassword,DOB_Day,DOB_Month,DOB_Year,Gender,Country,Recovery_Email,Mobile,Status, output, failure_reason
+Test_1,Yes,mldjn@example.com,RuvgCYBGCk,RuvgCYBGCk,21,JAN,1985,Male,Canada,axybg@example.com,5591499009
+Test_2,No,xatiw@example.com,CdJXzJeala,CdJXzJeala,28,FEB,1993,Male,USA,vhyuo@example.com,8351523360
+Test_3,Yes,ftzfs@example.com,FmNRATcKAz,FmNRATcKAz,11,MAR,1995,Male,India,nlqgw@example.com,6863036657
+Test_1,No,tgrvk@example.com,pAwNmksoqJ,pAwNmksoqJ,29,DEC,1994,Male,India,typux@example.com,3823687246
+Test_5,No,urfic@example.com,ZSJcSUCLRC,ZSJcSUCLRC,22,JUL,1985,Male,UK,rpzmm@example.com,9923645995
+Test_6,No,iotpr@example.com,wvvUplNwGn,wvvUplNwGn,27,JUN,2003,Male,UK,xgpcq@example.com,1079004132
+Test_1,Yes,wjwgh@example.com,gFWVQGNTqb,gFWVQGNTqb,21,DEC,1993,Male,Canada,lvcen@example.com,5462119625
+Test_8,Yes,zliwh@example.com,MrbagUugfs,MrbagUugfs,23,NOV,2005,Female,Australia,muwal@example.com,3441769142
+Test_3,Yes,naakt@example.com,CzVMNtYjEX,CzVMNtYjEX,26,SEP,2005,Male,USA,fzvjo@example.com,4534530527

@@ -1,1 +1,15 @@
-2026-05-06 01:45:29,595 - Registering {'ID': 'E001', 'Name': 'Amit', 'Department': 'Operations', 'Gender': 'Female', 'Mobile': 9823378862}
+2026-05-10 23:49:29,135 - Registering with Excel data: {'Testname': 'Test_1', 'Execute': 'Yes', 'EmailID': 'wjwgh@example.com', 'Password': 'gFWVQGNTqb', 'confirmPassword': 'gFWVQGNTqb', 'DOB_Day': 21, 'DOB_Month': 'DEC', 'DOB_Year': 1993, 'Gender': 'Male', 'Country': 'Canada', 'Recovery_Email': 'lvcen@example.com', 'Mobile': 5462119625, 'Status': nan, ' output': nan, ' failure_reason': nan}
+2026-05-10 23:49:29,136 - Filling element: [placeholder='Enter your full name']
+2026-05-10 23:49:29,171 - Successfully filled element with: Test_1
+2026-05-10 23:49:29,171 - Filling element: input[placeholder='Enter Rediffmail ID']
+2026-05-10 23:49:29,182 - Successfully filled element with: wjwgh@example.com
+2026-05-10 23:49:29,183 - Filling element: [placeholder='Enter password']
+2026-05-10 23:49:29,190 - Successfully filled element with: gFWVQGNTqb
+2026-05-10 23:49:29,190 - Filling element: [placeholder='Retype password']
+2026-05-10 23:49:29,197 - Successfully filled element with: gFWVQGNTqb
+2026-05-10 23:49:29,197 - Selecting option '21' from dropdown: select[name^="DOB_Day"]
+2026-05-10 23:49:29,203 - Successfully selected option: 21
+2026-05-10 23:49:29,203 - Selecting option 'DEC' from dropdown: select[name^="DOB_Month"]
+2026-05-10 23:49:29,209 - Successfully selected option: DEC
+2026-05-10 23:49:29,209 - Selecting option '1993' from dropdown: select[name^="DOB_Year"]
+2026-05-10 23:49:29,215 - Successfully selected option: 1993

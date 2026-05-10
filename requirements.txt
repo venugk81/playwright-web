@@ -8,3 +8,4 @@ openpyxl
 pytest-playwright
 pytest-html
 logger
+allure-pytest

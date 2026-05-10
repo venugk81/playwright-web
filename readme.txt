@@ -58,3 +58,22 @@ mcp/
 ├── pytest.ini
 ├── requirements.txt
 └── README.md
+\
+
+
+Add support for cross-browser testing (Chrome, Firefox, Safari)
+
+Perfect! I've updated your conftest.py to support cross-browser testing across Chrome (Chromium), Firefox, and Safari (WebKit). Here's what I implemented:
+Key Changes
+Parametrized Browser Fixture: Added a browser_types list with ["chromium", "firefox", "webkit"].
+Session-Scoped Browser Fixture: Launches each browser type once per test session for efficiency.
+Function-Scoped Page Fixture: Creates a new page/context for each test, ensuring isolation.
+How It Works
+Each test will now run automatically on all three browsers.
+The fixture uses getattr(playwright, browser_type) to dynamically launch the correct browser.
+Browser instances are shared across tests within a session for performance.
+Usage
+Run all tests on all browsers: pytest (each test runs 3 times, once per browser)
+Run on a specific browser: You can modify the browser_types list or use environment variables for control if needed.
+Parallel Execution: Combine with pytest-xdist for faster runs: pytest -n 3 (one worker per browser)
+This setup ensures your tests validate functionality across different browser engines, improving reliability for enterprise applications. If you'd like to add mobile emulation or selective execution as before, let me know!
