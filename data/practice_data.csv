@@ -1,0 +1,4 @@
+Testname,RadioOption, textarea,option,checkbox,openwindow,switchtab,alertok, alertcancel,mousehover,iframe
+Test1, 	radio2, 	  hi there, option2, option3,yes, yes, ok,cancel, hover1, iframe1
+Test1, 	radio2, 	  hi there, option2, option3,yes, yes, ok,cancel, hover1, iframe1
+Test2, 	radio2, 	  hi there, option2, option3,yes, yes, ok,cancel, hover1, iframe1
