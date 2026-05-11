@@ -77,3 +77,7 @@ Run all tests on all browsers: pytest (each test runs 3 times, once per browser)
 Run on a specific browser: You can modify the browser_types list or use environment variables for control if needed.
 Parallel Execution: Combine with pytest-xdist for faster runs: pytest -n 3 (one worker per browser)
 This setup ensures your tests validate functionality across different browser engines, improving reliability for enterprise applications. If you'd like to add mobile emulation or selective execution as before, let me know!
+
+
+pytest tests/TestPractice01.py --alluredir=reports/allure-results
+allure serve reports/allure-results

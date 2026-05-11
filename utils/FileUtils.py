@@ -74,9 +74,8 @@ def get_csv_data_zero(file_name, test_name):
     elif df[df['Testname'] == test_name].empty:
         pytest.fail("Testname is not found in the csv file: ", test_name)
     elif not df[df['Testname'] == test_name].empty:
-
         return df[df["Testname"]==test_name].to_dict(orient = "records")
-
+    return None
 
 # def get_csv_data1(file_name, test_name):
 #     """
