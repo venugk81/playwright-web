@@ -22,7 +22,7 @@ from utils.result_manager import ResultManager
 class TestPractice:
     test_data3 = get_csv_data_zero("sample_data", "Test_1")
     @pytest.mark.parametrize("map_data3", test_data3)
-    def test_practice(self, page, map_data3):
+    def test_rediff_registration(self, page, map_data3):
         with allure.step(f"Read Test data for the test: {map_data3}"):
             print(map_data3)
 
