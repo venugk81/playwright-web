@@ -23,7 +23,7 @@ class PracticePage(BasePage):
         try:
             # Navigate to the practice page
 
-            self.logger.info(f"Registering with Excel data: {map_data}")
+            self.logger.info(f"\nRegistering with Excel data: {map_data}")
             print("abc")
             self.fill(self.FULL_NAME, map_data.get("Testname"))
             self.fill(self.EMAIL_ID, map_data.get("EmailID"))

@@ -33,6 +33,7 @@ def pytest_configure(config):
             "Environment": os.getenv("ENV", "QA"),
 
         }
+        '''
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         report_dir = f"reports/{timestamp}"
         os.makedirs(report_dir, exist_ok=True)
@@ -44,6 +45,7 @@ def pytest_configure(config):
         config._metadata["Project"] = "Playwright Framework"
         config._metadata["Run"] = timestamp
         print(f"\n📊 Report generated at: {report_file}\n")
+        '''
     except Exception as e:
         print(f"Error in pytest_configure: {e}")
         raise
@@ -221,6 +223,6 @@ def clear_logs():
         - Empties the 'reports/test.log' file before each test execution.
     """
     try:
-        open("reports/test.log", "w").close()
+        open("reports/logs/test.log", "w").close()
     except Exception as e:
         print(f"Error clearing logs: {e}")

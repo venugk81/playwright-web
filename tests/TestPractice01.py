@@ -1,9 +1,11 @@
 import allure
 import pytest
-
+import allure
 from pages.PracticePage import  PracticePage
 
 from utils.FileUtils import get_csv_data_zero
+from utils.result_manager import ResultManager
+
 
 # test_data3 = get_csv_data_zero("practice_data", "Test1")
 #
@@ -21,9 +23,17 @@ class TestPractice:
     test_data3 = get_csv_data_zero("sample_data", "Test_1")
     @pytest.mark.parametrize("map_data3", test_data3)
     def test_practice(self, page, map_data3):
-        print(map_data3)
+        with allure.step(f"Read Test data for the test: {map_data3}"):
+            print(map_data3)
+
         red = PracticePage(page)
-        red.practice_ui_operations(map_data3)
+        with allure.step("Register new user profile: "):
+            red.practice_ui_operations(map_data3)
+
+        ResultManager.attach_screenshot(
+            page,
+            "After Login"
+        )
 
 # To run the script from cmd line: pytest -s tests/Testpractice01.py
 # -s shows print() statements in console. without -s, pytest captures output.
