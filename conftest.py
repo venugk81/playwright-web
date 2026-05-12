@@ -28,7 +28,7 @@ def pytest_configure(config):
     """
     try:
         config._metadata = {
-            "Project": "Playwright Framework",
+            "Project": "Rediff Playwright Framework",
             "Tester": os.getenv("USER", "Unknown"),
             "Environment": os.getenv("ENV", "QA"),
 
