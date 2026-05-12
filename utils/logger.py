@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 def get_logger():
-    logger = logging.getLogger("test_logger")
+    logger = logging.getLogger("rediff_logger")
     logger.setLevel(logging.INFO)
 
     if not logger.handlers:

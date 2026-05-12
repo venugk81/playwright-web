@@ -8,8 +8,7 @@ from utils.result_manager import ResultManager
 
 
 # test_data3 = get_csv_data_zero("practice_data", "Test1")
-#
-#
+
 # @pytest.mark.parametrize("map_data3", test_data3)
 # def test_practice(page, map_data3):
 #     print("map data: ", map_data3)
@@ -40,4 +39,5 @@ class TestPractice:
 # run specific test class: pytest -s test_user.py::TestUser
 
 # pytest tests/test_rediff_registration.py --alluredir=reports/allure-results
+# pytest tests/ui_tests/test_rediff_registration.py --alluredir=reports/allure-results
 # allure serve reports/allure-results
