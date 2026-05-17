@@ -21,7 +21,7 @@ def pytest_configure(config):
         config (pytest.Config): The pytest configuration object.
 
     Effects:
-        - Updates config._metadata with project, tester, and environment info.
+        - Updates configs._metadata with project, tester, and environment info.
         - Creates a timestamped report directory under 'reports/'.
         - Sets the HTML report file path and ensures it's self-contained.
         - Prints the report location to the console.
@@ -38,12 +38,12 @@ def pytest_configure(config):
         report_dir = f"reports/{timestamp}"
         os.makedirs(report_dir, exist_ok=True)
         report_file = f"{report_dir}/report.html"
-        config.option.htmlpath = report_file
-        config.option.self_contained_html = True
-        if not hasattr(config, "_metadata"):
-            config._metadata = {}
-        config._metadata["Project"] = "Playwright Framework"
-        config._metadata["Run"] = timestamp
+        configs.option.htmlpath = report_file
+        configs.option.self_contained_html = True
+        if not hasattr(configs, "_metadata"):
+            configs._metadata = {}
+        configs._metadata["Project"] = "Playwright Framework"
+        configs._metadata["Run"] = timestamp
         print(f"\n📊 Report generated at: {report_file}\n")
         '''
     except Exception as e:
@@ -106,7 +106,7 @@ def page(browser):
         Page: The Playwright page object, ready for interaction.
 
     Note:
-        BASE_URL is imported from utils.config.
+        BASE_URL is imported from utils.configs.
     """
     try:
         context = browser.new_context()
