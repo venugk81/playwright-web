@@ -1,5 +1,6 @@
 """
 Simple Playwright script to open Chrome and navigate to amazon.in
+https://rahulshettyacademy.com/AutomationPractice/
 """
 
 from playwright.sync_api import sync_playwright

@@ -1,5 +1,7 @@
 import time
 
+import pytest
+
 from pages.base_page import BasePage
 
 
@@ -19,11 +21,10 @@ class PracticePage(BasePage):
 
 
     def practice_ui_operations(self, map_data):
-        print("map data 123: ", map_data)
+        print("map data passed successfully to run the test method: ", map_data)
         try:
             # Navigate to the practice page
             self.logger.info(f"\nRegistering with Excel data: {map_data}")
-            print("abc")
             self.fill(self.FULL_NAME, map_data.get("Testname"))
             self.fill(self.EMAIL_ID, map_data.get("EmailID"))
             self.fill(self.PASSWORD, map_data.get("Password"))
@@ -32,15 +33,21 @@ class PracticePage(BasePage):
             self.select_dropdown_option(self.DOB_MONTH, map_data.get("DOB_Month"))
             self.select_dropdown_option(self.DOB_YEAR, map_data.get("DOB_Year"))
             # self.select_radio_by_text(self.GENDER, map_data.get("GENDER", "M"))
-            map_data['Status']='Pass'
-
+            if map_data.get("EmailID") == "xatiw@example.com":
+                map_data['Status']='Fail'
+                print("Simulated failure for email ID: ", map_data.get("EmailID"))
+                print("map_data: ", map_data)
+                pytest.fail ("Script failure - intentional failure")
+            else:
+                map_data['Status']='Pass'
+            print("Script passed and map_data is updated: ", map_data)
 
         #     self.logger.info("Registration with Excel data completed successfully")
         except Exception as e:
             map_data['Status'] = 'Fail'
         #     self.logger.error(f"Error during registration3 with data {map_data}: {e}")
-            print(f"Exception in register3 method: {e}")
-            raise
+            print(f"Exception in register3 method: {e}. map_data: {map_data}")
+            raise e
 
     def print_map_data(self, map_data):
         """

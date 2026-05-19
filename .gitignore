@@ -3,3 +3,6 @@
 # venu
 #
 /reports/allure-results/*
+
+/reports/logs/*
+/.idea/*

@@ -81,3 +81,5 @@ This setup ensures your tests validate functionality across different browser en
 
 pytest tests/TestPractice01.py --alluredir=reports/allure-results
 allure serve reports/allure-results
+
+https://rahulshettyacademy.com/AutomationPractice/

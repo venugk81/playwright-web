@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": "16",
+      "name": "Apple iPad Air16",
+      "data": {
+        "Generation": "4th",
+        "Price": "500.99",
+        "Capacity": "128 GB"
+      }
+    },
+    {
+      "id": "17",
+      "name": "Apple iPad Air17",
+      "data": {
+        "Generation": "4th",
+        "Price": "600.99",
+        "Capacity": "256 GB"
+      }
+    },
+    {
+      "id": "18",
+      "name": "Apple iPad Air18",
+      "data": {
+        "Generation": "4th",
+        "Price": "700.99",
+        "Capacity": "512 GB"
+      }
+    }
+  ]
+}
+
